@@ -29,12 +29,12 @@ Server (in ascii): ok\n
 ## Data Send/Recieve
 
 ```
-Client (in ascii): heres my [MESSAGE LEN IN BYTES] gilberts [MESSAGE]\n
+Client (in ascii): heres my [32 bit unsigned integer message len in bytes] gilberts [MESSAGE]\n
 Server (in ascii): ok i gilbert\n
 ```
 
 ```
-Server (in ascii): heres your [MESSAGE LEN IN BYTES] gilberts [MESSAGE]\n
+Server (in ascii): heres your [32 bit unsigned integer message len in bytes] gilberts [MESSAGE]\n
 Client (in ascii): ok i gilbert\n
 ```
 
@@ -44,10 +44,10 @@ Client (in ascii): ok i gilbert\n
 Client: lets gilb myserver123\n
 Server: OK LETS GILB\n
 
-Client: heres my 12 gilberts hello world!\n
+Client: heres my 0x0000000C gilberts hello world!\n
 Server: ok i gilbert\n
 
-Server: heres your 20 gilberts welcome to gilb!\n
+Server: heres your 0x00000014 gilberts welcome to gilb!\n
 Client: ok i gilbert\n
 
 Client: i want to disconnect my glibbing\n
